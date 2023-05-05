@@ -16,11 +16,7 @@ export default function Home() {
       </Head>
       <main>
         <h1 className={inter.className}>Welcome to Muslim space</h1>
-
         <div>
-          <p tw="text-xl font-bold">
-            This is just a test card i have setup not part of the design
-          </p>
           <ListingCard />
         </div>
       </main>
