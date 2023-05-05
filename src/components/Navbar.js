@@ -2,9 +2,9 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div>
+    <nav tw="bg-white p-3">
       <p>Navbar</p>
-    </div>
+    </nav>
   );
 };
 

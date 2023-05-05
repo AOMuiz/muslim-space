@@ -2,8 +2,8 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer tw="bg-green">
-      <p>Foooter</p>
+    <footer className="bg-green-[200] p-12">
+      <h3>Foooter</h3>
     </footer>
   );
 };

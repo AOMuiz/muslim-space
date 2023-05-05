@@ -1,15 +1,13 @@
-import Footer from "@/components/Footer";
 import GlobalStyles from "@/components/GlobalStyles";
-import Navbar from "@/components/Navbar";
+import Layout from "@/components/Layout";
+// import "../styles/globals.css";
 
 const App = ({ Component, pageProps }) => (
   <div>
     <GlobalStyles />
-    <Navbar />
-    <main>
+    <Layout>
       <Component {...pageProps} />
-    </main>
-    <Footer />
+    </Layout>
   </div>
 );
 
