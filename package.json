@@ -9,20 +9,30 @@
     "lint": "next lint"
   },
   "dependencies": {
+<<<<<<< HEAD
     "@babel/core": "^7.21.8",
     "@babel/plugin-syntax-jsx": "^7.21.4",
     "@hookform/resolvers": "^3.1.0",
     "@next/font": "13.3.4",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "autoprefixer": "^10.4.14",
+=======
+    "@babel/plugin-syntax-jsx": "^7.21.4",
+    "@next/font": "13.3.4",
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+>>>>>>> 0b541e48d9158678534c8154ac1fe60b6a070bdd
     "eslint": "8.39.0",
     "eslint-config-next": "13.3.4",
     "next": "13.3.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+<<<<<<< HEAD
     "react-hook-form": "^7.43.9",
     "styled-components": "^5.3.10",
     "yup": "^1.1.1"
+=======
+    "styled-components": "^5.3.10"
+>>>>>>> 0b541e48d9158678534c8154ac1fe60b6a070bdd
   },
   "devDependencies": {
     "babel-loader": "^9.1.2",
