@@ -10,11 +10,11 @@ const Category = () => {
 
       <div tw="border-2 rounded-2xl w-96 h-72">
         <div tw="flex items-center justify-around space-x-12 h-32 bg-[#EDDFC8]">
-          <div>
+          <div tw="space-y-2">
             <h1 tw="text-[#C6974F] font-medium text-4xl">Clothing</h1>
             <p tw="text-2xl">[20]</p>
           </div>
-          <Image src={cloth} alt="" width={95} />
+          <Image src={cloth} alt="" width={95} tw="bg-white p-2 rounded-lg" />
         </div>
         <div>
           <div tw="flex space-x-3 p-3">
