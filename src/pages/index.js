@@ -3,6 +3,7 @@ import { Inter } from "@next/font/google";
 import tw from "twin.macro";
 import ListingCard from "@/components/ListingCard";
 import SignUp from "@/components/SignUp";
+import LogIn from "@/components/LogIn";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,8 +19,9 @@ export default function Home() {
       <main>
         <h1 className={inter.className}>Welcome to Muslim space</h1>
         <div>
-          {/* <ListingCard /> */}
+          <ListingCard />
           <SignUp />
+          <LogIn />
         </div>
       </main>
     </>
