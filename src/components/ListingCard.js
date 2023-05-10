@@ -1,4 +1,5 @@
-import tw from "twin.macro";
+import Image from "next/image";
+import "twin.macro";
 
 const products = [
   {
@@ -53,7 +54,7 @@ const ListingCard = () => {
           {products.map((product) => (
             <a key={product.id} href={product.href} className="group">
               <div tw="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
-                <img
+                <Image
                   src={product.imageSrc}
                   alt={product.imageAlt}
                   tw="h-full w-full object-cover object-center group-hover:opacity-75"

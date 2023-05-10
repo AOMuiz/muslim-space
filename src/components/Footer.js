@@ -1,9 +1,10 @@
 import React from "react";
+import "twin.macro";
 
 const Footer = () => {
   return (
-    <footer className='bg-green-[200] p-12'>
-      <h3>Foooter</h3>
+    <footer tw='bg-green-400 p-7 text-center'>
+      <h3>Footer</h3>
     </footer>
   );
 };
