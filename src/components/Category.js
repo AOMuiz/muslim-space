@@ -51,11 +51,25 @@ const CATEGORY_ARRAY = [
     img: grocery,
     subCategories: ["Foodstuffs", "Fruits", "Beverages"],
   },
+  {
+    id: 7,
+    categoryName: "Cobler",
+    price: "[15]",
+    img: footwear,
+    subCategories: ["Chair", "Table", "Wardrobe"],
+  },
+  {
+    id: 8,
+    categoryName: "Cobler",
+    price: "[15]",
+    img: footwear,
+    subCategories: ["Chair", "Table", "Wardrobe"],
+  },
 ];
 
 const Category = () => {
   return (
-    <div tw="p-4">
+    <div tw="p-5">
       <h2 tw="text-center text-[#271C0C] font-semibold text-5xl ">
         Top Category
       </h2>
@@ -65,9 +79,9 @@ const Category = () => {
         {CATEGORY_ARRAY.map((category) => (
           <div
             key={category.id}
-            tw="hover:shadow-lg cursor-pointer border-2 rounded-2xl w-96 h-72 bg-[#F9F9F9]"
+            tw="hover:shadow-lg cursor-pointer border-2 rounded-2xl bg-[#F9F9F9]"
           >
-            <div tw="flex items-center justify-around rounded-se-xl rounded-ss-xl space-x-12 h-32 bg-[#EDDFC8]">
+            <div tw="flex items-center justify-around px-2 rounded-se-xl rounded-ss-xl space-x-14 h-32 bg-[#EDDFC8]">
               <div tw="space-y-2">
                 <h1 tw="text-[#C6974F] font-medium text-4xl">
                   {category.categoryName}
@@ -82,7 +96,7 @@ const Category = () => {
                 tw="bg-white p-2 rounded-lg"
               />
             </div>
-            <div>
+            <div tw="py-2">
               {category.subCategories.map((subcategory, index) => (
                 <div key={index} tw="flex space-x-3 p-3">
                   <Image src={arrow} alt="" width={10} />

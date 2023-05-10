@@ -40,7 +40,7 @@ const SellProducts = () => {
           >
             <Image src={product.img} alt="" width={90} />
             <div tw="flex items-center gap-3">
-              <div tw="rounded-full w-8 h-8 text-center text-white bg-[#C6974F]">
+              <div tw="w-12 h-12 rounded-full text-lg flex items-center justify-center text-white bg-[#C6974F]">
                 {product.id}
               </div>
               <p tw="font-medium text-2xl">{product.name}</p>
