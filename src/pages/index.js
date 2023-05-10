@@ -5,6 +5,7 @@ import ListingCard from "@/components/ListingCard";
 import SignUp from "@/components/SignUp";
 import LogIn from "@/components/LogIn";
 import Category from "@/components/Category";
+import SellProducts from "@/components/SellProducts";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,6 +25,7 @@ export default function Home() {
           <SignUp />
           <LogIn /> */}
           <Category />
+          <SellProducts />
         </div>
       </main>
     </>

@@ -7,7 +7,6 @@ import device from "../assets/images/device.png";
 import sawblade from "../assets/images/saw-blade.png";
 import footwear from "../assets/images/footwear.png";
 import grocery from "../assets/images/grocery.png";
-import click from "../assets/images/click.png";
 
 const CATEGORY_ARRAY = [
   {
@@ -15,7 +14,6 @@ const CATEGORY_ARRAY = [
     categoryName: "Clothing",
     price: "[20]",
     img: cloth,
-    // img: "/assets/images/cloth.png",
     subCategories: ["women", "Baby", "Men"],
   },
   {
@@ -65,7 +63,10 @@ const Category = () => {
       <br />
       <div tw="flex flex-wrap justify-around gap-y-8">
         {CATEGORY_ARRAY.map((category) => (
-          <div key={category.id} tw="border-2 rounded-2xl w-96 h-72">
+          <div
+            key={category.id}
+            tw="hover:shadow-lg cursor-pointer border-2 rounded-2xl w-96 h-72 bg-[#F9F9F9]"
+          >
             <div tw="flex items-center justify-around rounded-se-xl rounded-ss-xl space-x-12 h-32 bg-[#EDDFC8]">
               <div tw="space-y-2">
                 <h1 tw="text-[#C6974F] font-medium text-4xl">
