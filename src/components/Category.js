@@ -1,5 +1,5 @@
 import Image from "next/image";
-import {styled} from "twin.macro";
+import {styled, css} from "twin.macro";
 import cloth from "../assets/images/cloth.png";
 import arrow from "../assets/images/arrow.png";
 import chair from "../assets/images/chair.png";
