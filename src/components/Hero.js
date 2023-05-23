@@ -6,13 +6,11 @@ import {styled} from 'twin.macro';
 const Hero = () => {
   return (
     <HeroContainer>
-      <div>
         <Headline>Welcome to the Muslim Space!</Headline>
         <SubHeadline>
           Buy your products and services from trustworthy Muslims around you
           anywhere in the world.
         </SubHeadline>
-      </div>
     </HeroContainer>
   );
 };
