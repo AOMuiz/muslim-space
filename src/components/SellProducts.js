@@ -1,9 +1,8 @@
 import Image from "next/image";
-import React from "react";
 import click from "../assets/images/click.png";
 import upload from "../assets/images/upload.png";
 import sell from "../assets/images/sell.png";
-import tw from "twin.macro";
+import tw, {styled} from "twin.macro";
 
 const SELLPRODUCTS_ARRAY = [
   {
@@ -27,12 +26,12 @@ const SellProducts = () => {
   return (
     <div>
       <div tw="text-center">
-        <span tw="text-[#271C0C] font-semibold text-3xl ">
+        <span tw="text-[#271C0C] font-semibold text-3xl">
           Sell your product/skills with{" "}
         </span>
         <span tw="text-[#C6974F] font-semibold text-4xl">Muslim Space</span>
       </div>
-      <div tw="flex justify-center space-x-10 py-4">
+      <div tw="flex  py-4 flex-wrap gap-8 justify-center">
         {SELLPRODUCTS_ARRAY.map((product) => (
           <div
             key={product.id}
@@ -53,3 +52,8 @@ const SellProducts = () => {
 };
 
 export default SellProducts;
+
+// const StyledInput = styled.input`
+//   color: black;
+//   ${({ hasBorder }) => hasBorder && tw`border-purple-500`}
+// `

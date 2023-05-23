@@ -1,5 +1,5 @@
 import Image from "next/image";
-import tw from "twin.macro";
+import {styled} from "twin.macro";
 import cloth from "../assets/images/cloth.png";
 import arrow from "../assets/images/arrow.png";
 import chair from "../assets/images/chair.png";
@@ -53,35 +53,26 @@ const CATEGORY_ARRAY = [
   },
   {
     id: 7,
-    categoryName: "Cobler",
+    categoryName: "Hire a pro",
     price: "[15]",
     img: footwear,
-    subCategories: ["Chair", "Table", "Wardrobe"],
-  },
-  {
-    id: 8,
-    categoryName: "Cobler",
-    price: "[15]",
-    img: footwear,
-    subCategories: ["Chair", "Table", "Wardrobe"],
-  },
+    subCategories: ["Barber", "Laundry Man", "Developer"],
+  }
 ];
 
 const Category = () => {
   return (
     <div tw="p-5">
-      <h2 tw="text-center text-[#271C0C] font-semibold text-5xl ">
+      <h2 tw="text-center text-[#271C0C] font-semibold text-5xl mb-3">
         Top Category
       </h2>
-      <br />
-      <br />
-      <div tw="flex flex-wrap justify-around gap-y-8">
+      <CardListContainer>
         {CATEGORY_ARRAY.map((category) => (
           <div
             key={category.id}
             tw="hover:shadow-lg cursor-pointer border-2 rounded-2xl bg-[#F9F9F9]"
           >
-            <div tw="flex items-center justify-around px-2 rounded-se-xl rounded-ss-xl space-x-14 h-32 bg-[#EDDFC8]">
+            <div tw="flex items-center justify-around px-2 rounded-t-xl space-x-14 h-32 bg-[#EDDFC8]">
               <div tw="space-y-2">
                 <h1 tw="text-[#C6974F] font-medium text-4xl">
                   {category.categoryName}
@@ -106,9 +97,16 @@ const Category = () => {
             </div>
           </div>
         ))}
-      </div>
+      </CardListContainer>
     </div>
   );
 };
 
 export default Category;
+
+const CardListContainer = styled.div`
+ display:grid;
+ grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+ gap: 2rem;
+ margin-block: 2rem;
+`
