@@ -2,7 +2,7 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
-import tw from "twin.macro";
+import "twin.macro";
 import Image from "next/image";
 import google from "../../public/google.svg";
 import facebook from "../../public/facebook.svg";

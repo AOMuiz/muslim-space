@@ -2,8 +2,9 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
+import "twin.macro";
 
-const SignUp = () => {
+const LogIn = () => {
   const schema = yup.object().shape({
     email: yup.string().email().required("email is required"),
     password: yup.string().min(5).max(25).required(),
@@ -58,4 +59,4 @@ const SignUp = () => {
   );
 };
 
-export default SignUp;
+export default LogIn;

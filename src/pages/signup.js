@@ -1,8 +1,8 @@
-import React from 'react'
+import SignUp from '@/components/SignUp'
 
 const Signup = () => {
   return (
-    <div>Signup</div>
+    <SignUp/>
   )
 }
 
