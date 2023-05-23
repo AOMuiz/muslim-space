@@ -133,7 +133,7 @@ const SignUp = () => {
         </div>
         <div tw="p-10">
           <span tw="font-normal	text-6xl	">Already have an account? </span>
-          <span tw="font-extrabold text-2xl text-6xl	underline	"> Log in</span>
+          <span tw="font-extrabold text-6xl	underline	"> Log in</span>
         </div>
       </div>
     </>

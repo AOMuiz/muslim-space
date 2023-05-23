@@ -2,8 +2,6 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
-import tw from "twin.macro";
-import Image from "next/image";
 
 const SignUp = () => {
   const schema = yup.object().shape({
@@ -29,7 +27,6 @@ const SignUp = () => {
         <fieldset tw="text-center">
           <p tw="font-medium text-lg"> WELCOME BACK!</p>
         </fieldset>
-
         <label htmlFor="email" tw="font-normal text-3xl">
           Email
         </label>
