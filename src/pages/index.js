@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Inter } from "@next/font/google";
+import { Inter } from "next/font/google";
 import tw from "twin.macro";
 import ListingCard from "@/components/ListingCard";
 import SignUp from "@/components/SignUp";
@@ -21,9 +21,6 @@ export default function Home() {
       <main>
         <h1 className={inter.className}>Welcome to Muslim space</h1>
         <div>
-          {/* <ListingCard />
-          <SignUp />
-          <LogIn /> */}
           <Category />
           <SellProducts />
         </div>
