@@ -1,4 +1,8 @@
 import tw from "twin.macro";
+import Image from "next/image";
+import profilePic from "../../public/jameel.png";
+import like from "../../public/vector.png";
+import Bstar from "../../public/Bstar.png";
 
 const products = [
   {
@@ -46,9 +50,42 @@ const products = [
 
 const ListingCard = () => {
   return (
-    <div tw="bg-white">
-      <div tw="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-        <h2 tw="sr-only text-xl font-bold">Products</h2>
+    <div tw="bg-white  px-4 py-16 ">
+      <div tw="bg-white mx-auto inline-block rounded-lg overflow-hidden border-2 border-gray-200">
+        <div tw="p-3.5 bg-white border-b border-gray-200">
+          <Image
+            src={profilePic}
+            width={200}
+            height={200}
+            alt="Picture of jameel"
+          />
+        </div>
+        <div tw="p-2.5">
+          <div tw="flex justify-between">
+            <div>
+              <p tw="text-sm text-gray-400 ">Clothing</p>
+              <span tw="flex ">
+                <Image src={Bstar} width={12} height={12} alt="Bstar symbol" />
+                <Image src={Bstar} width={12} height={12} alt="Bstar symbol" />
+                <Image src={Bstar} width={12} height={12} alt="Bstar symbol" />
+                <Image src={Bstar} width={12} height={12} alt="Bstar symbol" />
+                <Image src={Bstar} width={12} height={12} alt="Bstar symbol" />
+              </span>
+            </div>
+            <div tw="mx-1.5">
+              <div tw="p-2 border-2 border-gray-100 rounded cursor-pointer hover:bg-blue-900">
+                <Image src={like} width={15} height={15} alt="likes symbol" />
+              </div>
+            </div>
+          </div>
+          <div>
+            <h3 tw="text-xl py-2">High quality....</h3>
+          </div>
+        </div>
+      </div>
+
+      {/*  <div tw="mx-auto bg-white max-w-xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+        <h2 tw="sr-only text-xl font-bold text-blue-200">Products</h2>
         <div tw="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
           {products.map((product) => (
             <a key={product.id} href={product.href} className="group">
@@ -64,7 +101,7 @@ const ListingCard = () => {
             </a>
           ))}
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
