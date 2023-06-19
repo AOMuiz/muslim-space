@@ -1,8 +1,9 @@
 import React from "react";
+import "twin.macro";
 
 const Navbar = () => {
   return (
-    <nav tw="bg-white-50 p-3">
+    <nav tw="bg-gray-200 p-3">
       <p>Navbar</p>
     </nav>
   );

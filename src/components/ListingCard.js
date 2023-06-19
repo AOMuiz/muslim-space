@@ -88,16 +88,17 @@ const ListingCard = () => {
         <h2 tw="sr-only text-xl font-bold text-blue-200">Products</h2>
         <div tw="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
           {products.map((product) => (
-            <a key={product.id} href={product.href} className="group">
-              <div tw="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+            <a key={product.id} href={product.href} className='group'>
+              <div tw='aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7'>
+                {/* make use of next/image instead*/}
                 <img
                   src={product.imageSrc}
                   alt={product.imageAlt}
-                  tw="h-full w-full object-cover object-center group-hover:opacity-75"
+                  tw='h-full w-full object-cover object-center group-hover:opacity-75'
                 />
               </div>
-              <h3 tw="mt-4 text-sm text-gray-700">{product.name}</h3>
-              <p tw="mt-1 text-lg font-medium text-gray-900">{product.price}</p>
+              <h3 tw='mt-4 text-sm text-gray-700'>{product.name}</h3>
+              <p tw='mt-1 text-lg font-medium text-gray-900'>{product.price}</p>
             </a>
           ))}
         </div>
