@@ -1,5 +1,5 @@
 import Image from "next/image";
-import {styled, css} from "twin.macro";
+import { styled, css } from "twin.macro";
 import cloth from "../assets/images/cloth.png";
 import arrow from "../assets/images/arrow.png";
 import chair from "../assets/images/chair.png";
@@ -57,13 +57,13 @@ const CATEGORY_ARRAY = [
     price: "[15]",
     img: footwear,
     subCategories: ["Barber", "Laundry Man", "Developer"],
-  }
+  },
 ];
 
 const Category = () => {
   return (
     <div tw="p-5">
-      <h2 tw="text-center text-[#271C0C] font-semibold text-5xl mb-3">
+      <h2 tw="text-center text-[#271C0C] font-semibold text-5xl mb-3 font-playfair">
         Top Category
       </h2>
       <CardListContainer>
@@ -105,8 +105,8 @@ const Category = () => {
 export default Category;
 
 const CardListContainer = styled.div`
- display:grid;
- grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
- gap: 2rem;
- margin-block: 2rem;
-`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 2rem;
+  margin-block: 2rem;
+`;

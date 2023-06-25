@@ -11,8 +11,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        playfair: ['var(--font-playfair-display)'],
-        roboto: ['var(--font-roboto)'],
+        playfair: ["var(--font-playfair-display)"],
+        roboto: ["var(--font-roboto)"],
       },
       colors: {
         transparent: "transparent",
