@@ -47,9 +47,9 @@ const products = [
   },
 ];
 
-const ListingCard = ({ productImg }) => {
+const ListingCard = ({ productImg, price }) => {
   return (
-    <div tw="bg-white px-4 py-16">
+    <div tw="bg-white px-4 py-16 shadow-sm">
       <div tw="bg-white mx-auto inline-block rounded-lg overflow-hidden border-2 border-gray-200">
         <Link
           href="/product/1"
@@ -65,7 +65,7 @@ const ListingCard = ({ productImg }) => {
         <div tw="p-2.5">
           <div tw="flex justify-between">
             <div>
-              <p tw="text-sm text-gray-400 ">Clothing</p>
+              <p tw="text-sm text-gray-400">Clothing</p>
               <span tw="flex ">
                 <Image src={Bstar} width={12} height={12} alt="Bstar symbol" />
                 <Image src={Bstar} width={12} height={12} alt="Bstar symbol" />
@@ -81,7 +81,10 @@ const ListingCard = ({ productImg }) => {
             </div>
           </div>
           <div>
-            <h3 tw="text-xl py-2">High quality....</h3>
+            <h3 tw="text-xl py-2 text-primary-900">
+              High quality perfumes....
+            </h3>
+            <h3 tw="text-primary">{price}</h3>
           </div>
         </div>
       </div>

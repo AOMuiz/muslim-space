@@ -25,12 +25,12 @@ export default function Home() {
             Featured Products
           </h2>
           <div tw="flex flex-wrap">
-            <ListingCard productImg={jameel} />
-            <ListingCard productImg={zayyan} />
-            <ListingCard productImag={decor} />
-            <ListingCard productImg={jameel} />
-            <ListingCard productImg={zayyan} />
-            <ListingCard productImag={decor} />
+            <ListingCard price={"₦5,000"} productImg={jameel} />
+            <ListingCard price={"₦10,000"} productImg={zayyan} />
+            <ListingCard price={"₦6,000"} productImg={decor} />
+            <ListingCard price={"₦500"} productImg={jameel} />
+            <ListingCard price={"₦300"} productImg={zayyan} />
+            <ListingCard price={"₦50,000"} productImg={decor} />
           </div>
         </section>
         <SellProducts />
