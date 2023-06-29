@@ -13,7 +13,7 @@ import verified_user from "../../public/icons/verified_user.svg";
 const ProductDetails = () => {
   return (
     <div tw="py-5 px-8">
-      <h2 tw="font-playfair text-2xl font-bold text-[#C89850] mb-6">
+      <h2 tw="font-playfair text-2xl font-bold text-primary mb-6">
         Apple IPhone 7 Plus (32 GB) Hot Price (Used)
       </h2>
       <div tw="grid grid-cols-3 gap-10">
@@ -61,10 +61,10 @@ const ProductDetails = () => {
               </div>
             </div>
             <div tw="flex flex-col gap-2 py-2">
-              <button tw="bg-[#C89850] text-white p-2 rounded-lg">
+              <button tw="bg-primary text-white p-2 rounded-lg">
                 Show Contact
               </button>
-              <button tw="bg-white text-[#C89850] border-2 border-[#C89850] p-2 rounded-lg">
+              <button tw="bg-white text-primary border-2 border-primary p-2 rounded-lg">
                 Sellers Profile
               </button>
             </div>

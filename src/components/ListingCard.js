@@ -1,6 +1,5 @@
 import "twin.macro";
 import Image from "next/image";
-import profilePic from "../../public/images/jameel.png";
 import like from "../../public/images/vector.png";
 import Bstar from "../../public/images/Bstar.png";
 import Link from "next/link";
@@ -48,7 +47,7 @@ const products = [
   },
 ];
 
-const ListingCard = () => {
+const ListingCard = ({ productImg }) => {
   return (
     <div tw="bg-white px-4 py-16">
       <div tw="bg-white mx-auto inline-block rounded-lg overflow-hidden border-2 border-gray-200">
@@ -57,7 +56,7 @@ const ListingCard = () => {
           tw="p-3 inline-block bg-white border-b border-gray-200"
         >
           <Image
-            src={profilePic}
+            src={productImg}
             width={200}
             height={200}
             alt="Picture of jameel"

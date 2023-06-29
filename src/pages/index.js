@@ -4,6 +4,9 @@ import SellProducts from "@/components/SellProducts";
 import Hero from "@/components/Hero";
 import ListingCard from "@/components/ListingCard";
 import "twin.macro";
+import zayyan from "../../public/images/zayyan.png";
+import decor from "../../public/images/just_decor.png";
+import jameel from "../../public/images/jameel.png";
 
 export default function Home() {
   return (
@@ -22,12 +25,12 @@ export default function Home() {
             Featured Products
           </h2>
           <div tw="flex flex-wrap">
-            <ListingCard />
-            <ListingCard />
-            <ListingCard />
-            <ListingCard />
-            <ListingCard />
-            <ListingCard />
+            <ListingCard productImg={jameel} />
+            <ListingCard productImg={zayyan} />
+            <ListingCard productImag={decor} />
+            <ListingCard productImg={jameel} />
+            <ListingCard productImg={zayyan} />
+            <ListingCard productImag={decor} />
           </div>
         </section>
         <SellProducts />
