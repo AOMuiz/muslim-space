@@ -62,7 +62,7 @@ const CATEGORY_ARRAY = [
 
 const Category = () => {
   return (
-    <div tw="p-5">
+    <section tw="p-5">
       <h2 tw="text-center text-[#271C0C] font-semibold text-5xl mb-3 font-playfair">
         Top Category
       </h2>
@@ -98,7 +98,7 @@ const Category = () => {
           </div>
         ))}
       </CardListContainer>
-    </div>
+    </section>
   );
 };
 

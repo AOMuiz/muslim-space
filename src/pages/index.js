@@ -2,7 +2,8 @@ import Head from "next/head";
 import Category from "@/components/Category";
 import SellProducts from "@/components/SellProducts";
 import Hero from "@/components/Hero";
-import ProductDetailsPage from "@/components/Product-details";
+import ListingCard from "@/components/ListingCard";
+import "twin.macro";
 
 export default function Home() {
   return (
@@ -14,10 +15,22 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div>
-        {/* <Hero/>
-          <Category />
-          <SellProducts /> */}
-        <ProductDetailsPage />
+        <Hero />
+        <Category />
+        <section tw="p-5">
+          <h2 tw="text-center text-[#271C0C] font-semibold text-5xl mb-3 font-playfair">
+            Featured Products
+          </h2>
+          <div tw="flex flex-wrap">
+            <ListingCard />
+            <ListingCard />
+            <ListingCard />
+            <ListingCard />
+            <ListingCard />
+            <ListingCard />
+          </div>
+        </section>
+        <SellProducts />
       </div>
     </>
   );
