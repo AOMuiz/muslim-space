@@ -1,8 +1,8 @@
-import ProductDetailsPage from "@/components/Product-details";
+import ProductDetails from "@/components/ProductDetails";
 import React from "react";
 
 const productDetail = () => {
-  return <ProductDetailsPage />;
+  return <ProductDetails />;
 };
 
 export default productDetail;

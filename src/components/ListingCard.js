@@ -1,8 +1,8 @@
-import tw from "twin.macro";
+import "twin.macro";
 import Image from "next/image";
-import profilePic from "../../public/jameel.png";
-import like from "../../public/vector.png";
-import Bstar from "../../public/Bstar.png";
+import profilePic from "../../public/images/jameel.png";
+import like from "../../public/images/vector.png";
+import Bstar from "../../public/images/Bstar.png";
 import Link from "next/link";
 
 const products = [
