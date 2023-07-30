@@ -2,6 +2,11 @@ import Head from "next/head";
 import Category from "@/components/Category";
 import SellProducts from "@/components/SellProducts";
 import Hero from "@/components/Hero";
+import ListingCard from "@/components/ListingCard";
+import "twin.macro";
+import zayyan from "../../public/images/zayyan.png";
+import decor from "../../public/images/just_decor.png";
+import jameel from "../../public/images/jameel.png";
 
 export default function Home() {
   return (
@@ -12,11 +17,24 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-        <div>
-          <Hero/>
-          <Category />
-          <SellProducts />
-        </div>
+      <div>
+        <Hero />
+        <Category />
+        <section tw="p-5">
+          <h2 tw="text-center text-[#271C0C] font-semibold text-5xl mb-3 font-playfair">
+            Featured Products
+          </h2>
+          <div tw="flex flex-wrap">
+            <ListingCard price={"₦5,000"} productImg={jameel} />
+            <ListingCard price={"₦10,000"} productImg={zayyan} />
+            <ListingCard price={"₦6,000"} productImg={decor} />
+            <ListingCard price={"₦500"} productImg={jameel} />
+            <ListingCard price={"₦300"} productImg={zayyan} />
+            <ListingCard price={"₦50,000"} productImg={decor} />
+          </div>
+        </section>
+        <SellProducts />
+      </div>
     </>
   );
 }

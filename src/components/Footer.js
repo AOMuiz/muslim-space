@@ -11,6 +11,7 @@ import appStore from "src/assets/images/appStore.svg";
 import googlePlay from "src/assets/images/googlePlay.svg";
 
 const Footer = () => {
+<<<<<<< HEAD
  return (
   <div>
    <div tw="bg-[#271C0C] flex flex-col items-center justify-center p-2">
@@ -90,6 +91,13 @@ const Footer = () => {
    </div>
   </div>
  );
+=======
+  return (
+    <footer tw="bg-green-400 p-7">
+      <h3>Footer</h3>
+    </footer>
+  );
+>>>>>>> main
 };
 
 export default Footer;

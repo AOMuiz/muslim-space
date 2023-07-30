@@ -51,7 +51,7 @@ const LogIn = () => {
         />
         {errors.password && <p tw="text-red-400">{errors.password?.message}</p>}
 
-        <button tw="bg-[#C89850] text-white rounded-md p-4 mx-10 hover:bg-blue-600">
+        <button tw="bg-primary text-white rounded-md p-4 mx-10 hover:bg-blue-600">
           Log In
         </button>
       </form>

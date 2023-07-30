@@ -7,6 +7,7 @@ import Image from "next/image";
 import google from "../../public/google.svg";
 import facebook from "../../public/facebook.svg";
 import twitter from "../../public/twitter.svg";
+import Link from "next/link";
 // /** @jsxImportSource @emotion/react */
 
 const SignUp = () => {
@@ -102,7 +103,7 @@ const SignUp = () => {
             <p tw="text-red-400">{errors.isAccept?.message}</p>
           )}
         </fieldset>
-        <button tw="bg-[#C89850] text-white rounded-md p-4 mx-10 hover:bg-blue-600">
+        <button tw="bg-primary text-white rounded-md p-4 mx-10 hover:bg-blue-600">
           Create account
         </button>
       </form>
@@ -111,9 +112,9 @@ const SignUp = () => {
           <span tw="text-[#81818F]">
             By Registering, you agree to Muslim Space
           </span>
-          <span tw="text-[#C89850]">User Agreement</span>
+          <span tw="text-primary"> User Agreement </span>
           <span tw="text-[#81818F]">and</span>
-          <span tw="text-[#C89850]"> Cookies & Internet Advertising.</span>
+          <span tw="text-primary"> Cookies & Internet Advertising.</span>
         </div>
         <div tw="py-10">
           <span>----------------</span>
@@ -132,8 +133,10 @@ const SignUp = () => {
           </div>
         </div>
         <div tw="p-10">
-          <span tw="font-normal	text-6xl	">Already have an account? </span>
-          <span tw="font-extrabold text-6xl	underline	"> Log in</span>
+          <span tw="font-normal	text-4xl">Already have an account? </span>
+          <Link tw="font-extrabold text-4xl	underline" href="/login">
+            Log in
+          </Link>
         </div>
       </div>
     </>

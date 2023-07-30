@@ -1,5 +1,8 @@
-import Image from "next/image";
 import "twin.macro";
+import Image from "next/image";
+import like from "../../public/images/vector.png";
+import Bstar from "../../public/images/Bstar.png";
+import Link from "next/link";
 
 const products = [
   {
@@ -42,29 +45,47 @@ const products = [
     imageAlt:
       "Hand holding black machined steel mechanical pencil with brass tip and top.",
   },
-  // More products...
 ];
 
-const ListingCard = () => {
+const ListingCard = ({ productImg, price }) => {
   return (
-    <div tw='bg-white'>
-      <div tw='mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8'>
-        <h2 tw='sr-only text-xl font-bold'>Products</h2>
-        <div tw='grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8'>
-          {products.map((product) => (
-            <a key={product.id} href={product.href} className='group'>
-              <div tw='aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7'>
-                {/* make use of next/image instead*/}
-                <img
-                  src={product.imageSrc}
-                  alt={product.imageAlt}
-                  tw='h-full w-full object-cover object-center group-hover:opacity-75'
-                />
+    <div tw="bg-white px-4 py-16 shadow-sm">
+      <div tw="bg-white mx-auto inline-block rounded-lg overflow-hidden border-2 border-gray-200">
+        <Link
+          href="/product/1"
+          tw="p-3 inline-block bg-white border-b border-gray-200"
+        >
+          <Image
+            src={productImg}
+            width={200}
+            height={200}
+            alt="Picture of jameel"
+          />
+        </Link>
+        <div tw="p-2.5">
+          <div tw="flex justify-between">
+            <div>
+              <p tw="text-sm text-gray-400">Clothing</p>
+              <span tw="flex ">
+                <Image src={Bstar} width={12} height={12} alt="Bstar symbol" />
+                <Image src={Bstar} width={12} height={12} alt="Bstar symbol" />
+                <Image src={Bstar} width={12} height={12} alt="Bstar symbol" />
+                <Image src={Bstar} width={12} height={12} alt="Bstar symbol" />
+                <Image src={Bstar} width={12} height={12} alt="Bstar symbol" />
+              </span>
+            </div>
+            <div tw="mx-1.5">
+              <div tw="p-2 border-2 border-gray-100 rounded cursor-pointer hover:bg-blue-900">
+                <Image src={like} width={15} height={15} alt="likes symbol" />
               </div>
-              <h3 tw='mt-4 text-sm text-gray-700'>{product.name}</h3>
-              <p tw='mt-1 text-lg font-medium text-gray-900'>{product.price}</p>
-            </a>
-          ))}
+            </div>
+          </div>
+          <div>
+            <h3 tw="text-xl py-2 text-primary-900">
+              High quality perfumes....
+            </h3>
+            <h3 tw="text-primary">{price}</h3>
+          </div>
         </div>
       </div>
     </div>
