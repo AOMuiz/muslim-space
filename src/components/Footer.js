@@ -31,18 +31,18 @@ const Footer = () => {
      </p>
     </div>
 
-    <div tw="grid grid-cols-6 text-white mt-5 mx-28 text-sm mb-14">
+    <div tw="grid grid-cols-6 items-center justify-items-center text-white mt-5 mx-28 text-sm mb-14">
      <div>
       <Image src={badge} alt="" tw="h-10" />
       <p tw="py-5">
        Best information about the company goes here but now lorem ipsum is
       </p>
-      <div tw="flex flex-row items-center justify-center">
-       <Image src={facebook} alt="" />
-       <Image src={twitter} alt="" />
-       <Image src={instagram} alt="" />
-       <Image src={linkedin} alt="" />
-       <Image src={youtube} alt="" />
+      <div tw="flex flex-row items-center justify-start">
+       <Image src={facebook} alt="" tw="" />
+       <Image src={twitter} alt="" tw="ml-2" />
+       <Image src={instagram} alt="" tw="ml-2" />
+       <Image src={linkedin} alt="" tw="ml-2" />
+       <Image src={youtube} alt="" tw="ml-2" />
       </div>
      </div>
 
@@ -52,28 +52,28 @@ const Footer = () => {
       <p>Find Store</p>
       <p>Categories</p>
      </div>
-     <div tw="all-child:py-0.5">
+     <div tw="all-child:py-0.5 ml-14">
       <p tw="[color: #b48948] py-2">Resources</p>
       <p>Learn About Islam</p>
       <p>Non-Muslims</p>
       <p>Muslims</p>
       <p>Business Tips</p>
      </div>
-     <div tw="all-child:py-0.5">
+     <div tw="all-child:py-0.5 mr-14">
       <p tw="[color: #b48948] py-2">Information</p>
       <p>Help Center</p>
       <p>Money Refund</p>
       <p>Contact Us</p>
       <p>Privacy Policy</p>
      </div>
-     <div tw="all-child:py-0.5">
+     <div tw="all-child:py-0.5 mr-14">
       <p tw="[color: #b48948] py-2">For Users</p>
       <p>Login</p>
       <p>Register</p>
       <p>Settings</p>
       <p>My Orders</p>
      </div>
-     <div tw="all-child:py-0.5 px-0">
+     <div tw="all-child:py-0.5">
       <p tw="[color: #b48948] py-2">Get App</p>
       <div>
        <Image src={appStore} alt="" tw="h-10 w-fit" />
@@ -93,26 +93,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-// const Data = [
-//  {
-//   title: "About",
-//   data: ["About Us", "Find Store", "Categories"],
-//  },
-//  {
-//   title: "Resources",
-//   data: ["Learn About Islam", "Non-Muslims", "Muslims", "Business Tips"],
-//  },
-//  {
-//   title: "Information",
-//   data: ["Help Center", "Money Refund", "Contact us"],
-//  },
-//  {
-//   title: "For Users",
-//   data: ["Login", "Register", "Settings", "My Orders"],
-//  },
-//  {
-//   title: "Get App",
-//   data: [],
-//  },
-// ];
